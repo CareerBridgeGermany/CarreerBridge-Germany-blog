@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerBridge Germany</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      background-color: #1e40af;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.5em;
+      font-weight: bold;
+    }
+    .language-toggle {
+      cursor: pointer;
+      padding: 0.3em 1em;
+      background: white;
+      color: #1e40af;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+    }
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+    h1, h2 {
+      color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="titre">CareerBridge Germany</h1>
+    <p id="slogan">Passerelle vers la formation rémunérée en Allemagne</p>
+  </header>
+
+  <nav>
+    <div>
+      <a href="#about" id="nav-1">À propos</a>
+      <a href="#programs" id="nav-2">Formations</a>
+      <a href="#contact" id="nav-3">Contact</a>
+    </div>
+    <div class="language-toggle" onclick="switchLanguage()">EN</div>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2 id="about-title">Pourquoi CareerBridge ?</h2>
+      <p id="about-text">
+        CareerBridge Germany est un blog conçu pour les Camerounais souhaitant suivre une formation professionnelle rémunérée en Allemagne. Nous vous guidons à chaque étape : choix de la filière, démarches administratives, apprentissage de la langue allemande, témoignages et conseils pratiques.
+      </p>
+    </section>
+
+    <section id="programs">
+      <h2 id="programs-title">Les Formations Disponibles</h2>
+      <ul id="programs-list">
+        <li>Soins infirmiers</li>
+        <li>Mécanique automobile</li>
+        <li>Technicien informatique</li>
+        <li>Électricité et électronique</li>
+        <li>Hôtellerie et restauration</li>
+        <li>Et bien plus encore…</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2 id="contact-title">Nous contacter</h2>
+      <p id="contact-text">
+        Une question ? Besoin d’accompagnement ? Écrivez-nous à :  
+        <strong>careerbridgegermany@gmail.com</strong>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 CareerBridge Germany — Créé pour les talents camerounais</p>
+  </footer>
+
+  <script>
+    let currentLang = "fr";
+
+    function switchLanguage() {
+      if (currentLang === "fr") {
+        document.querySelector(".language-toggle").innerText = "FR";
+        document.getElementById("titre").innerText = "CareerBridge Germany";
+        document.getElementById("slogan").innerText = "Your gateway to paid training in Germany";
+
+        document.getElementById("nav-1").innerText = "About";
+        document.getElementById("nav-2").innerText = "Training";
+        document.getElementById("nav-3").innerText = "Contact";
+
+        document.getElementById("about-title").innerText = "Why CareerBridge?";
+        document.getElementById("about-text").innerText =
+          "CareerBridge Germany is a blog created for Cameroonians seeking paid vocational training in Germany. We guide you every step of the way: program choices, paperwork, German language prep, testimonials, and practical tips.";
+
+        document.getElementById("programs-title").innerText = "Available Trainings";
+        document.getElementById("programs-list").innerHTML =
+          "<li>Nursing</li><li>Auto Mechanics</li><li>IT Technician</li><li>Electrical and Electronics</li><li>Hotel & Restaurant</li><li>And much more…</li>";
+
+        document.getElementById("contact-title").innerText = "Contact us";
+        document.getElementById("contact-text").innerHTML =
+          "Any questions? Need support? Email us at: <strong>careerbridgegermany@gmail.com</strong>";
+
+        currentLang = "en";
+      } else {
+        document.querySelector(".language-toggle").innerText = "EN";
+        document.getElementById("titre").innerText = "CareerBridge Germany";
+        document.getElementById("slogan").innerText = "Passerelle vers la formation rémunérée en Allemagne";
+
+        document.getElementById("nav-1").innerText = "À propos";
+        document.getElementById("nav-2").innerText = "Formations";
+        document.getElementById("nav-3").innerText = "Contact";
+
+        document.getElementById("about-title").innerText = "Pourquoi CareerBridge ?";
+        document.getElementById("about-text").innerText =
+          "CareerBridge Germany est un blog conçu pour les Camerounais souhaitant suivre une formation professionnelle rémunérée en Allemagne. Nous vous guidons à chaque étape : choix de la filière, démarches administratives, apprentissage de la langue allemande, témoignages et conseils pratiques.";
+
+        document.getElementById("programs-title").innerText = "Les Formations Disponibles";
+        document.getElementById("programs-list").innerHTML =
+          "<li>Soins infirmiers</li><li>Mécanique automobile</li><li>Technicien informatique</li><li>Électricité et électronique</li><li>Hôtellerie et restauration</li><li>Et bien plus encore…</li>";
+
+        document.getElementById("contact-title").innerText = "Nous contacter";
+        document.getElementById("contact-text").innerHTML =
+          "Une question ? Besoin d’accompagnement ? Écrivez-nous à : <strong>careerbridgegermany@gmail.com</strong>";
+
+        currentLang = "fr";
+      }
+    }
+  </script>
+</body>
+</html>
