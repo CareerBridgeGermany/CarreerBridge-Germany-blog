@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CareerBridge Germany</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background-color: #f7f9fb;
+      color: #333;
     }
     header {
-      background-color: #2a6ebb;
+      background-color: #0057A3;
       color: white;
-      padding: 1rem;
+      padding: 20px;
       text-align: center;
     }
     nav {
-      background: #1d4e89;
-      padding: 0.5rem;
+      background-color: #eaeaea;
+      padding: 10px;
       text-align: center;
     }
     nav a {
-      color: white;
-      margin: 0 1rem;
+      margin: 0 10px;
       text-decoration: none;
+      color: #0057A3;
       font-weight: bold;
     }
     section {
-      padding: 2rem;
-      background: white;
-      max-width: 800px;
-      margin: auto;
-      margin-top: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #0057A3;
     }
     footer {
-      background: #2a6ebb;
+      background-color: #0057A3;
       color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+      nav a {
+        margin: 5px 0;
+      }
     }
   </style>
 </head>
@@ -50,31 +57,45 @@
 
   <header>
     <h1>CareerBridge Germany</h1>
-    <p>Tout savoir sur la formation professionnelle rémunérée en Allemagne</p>
+    <p>Your gateway to paid vocational training opportunities in Germany</p>
   </header>
 
   <nav>
-    <a href="#">Accueil</a>
-    <a href="#">Infos utiles</a>
-    <a href="#">Témoignages</a>
-    <a href="#">Contact</a>
+    <a href="#about">About</a>
+    <a href="#training">Training</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <section>
-    <h2>Bienvenue sur CareerBridge Germany !</h2>
-    <p>
-      Ce blog est dédié à tous ceux qui souhaitent découvrir et comprendre le système de formation professionnelle rémunérée en Allemagne, connu sous le nom de <strong>Ausbildung</strong>. 
-    </p>
-    <p>
-      Vous y trouverez des conseils, des témoignages, des infos pratiques et des opportunités pour réussir votre projet d’expatriation ou d’évolution professionnelle.
-    </p>
-    <p>
-      Revenez régulièrement pour découvrir nos nouveaux articles !
-    </p>
+  <section id="about">
+    <h2>About the Blog</h2>
+    <p>CareerBridge Germany is a resource for anyone interested in Germany’s dual vocational training system, known as "Ausbildung". Learn how to apply, prepare for interviews, and move to Germany with confidence.</p>
+  </section>
+
+  <section id="training">
+    <h2>What is Ausbildung?</h2>
+    <p>Ausbildung is a paid vocational training program in Germany that combines work experience with classroom learning. You earn while you learn and get a certified qualification recognized across the country.</p>
+    <ul>
+      <li>Duration: 2 to 3.5 years</li>
+      <li>Fields: healthcare, IT, engineering, hospitality, and more</li>
+      <li>Salary: ~€800–€1,200/month depending on the year and field</li>
+    </ul>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>Do I need to speak German?</strong><br/> Yes, most programs require at least B1 level of German.</p>
+    <p><strong>Do I need a visa?</strong><br/> Yes. A vocational training visa is available if you meet the requirements.</p>
+    <p><strong>Is it open to non-EU citizens?</strong><br/> Absolutely! Many trainees come from Africa, Asia, and Latin America.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Stay Connected</h2>
+    <p>Soon you’ll be able to subscribe to our newsletter or contact us for personalized help.</p>
   </section>
 
   <footer>
-    &copy; 2025 CareerBridge Germany – Tous droits réservés.
+    <p>&copy; 2025 CareerBridge Germany. All rights reserved.</p>
   </footer>
 
 </body>
