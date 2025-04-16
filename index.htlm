@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerBridge Germany</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    h1 {
+      color: #0057A3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to CareerBridge Germany!</h1>
+  <p>This blog helps you explore paid vocational training opportunities (<em>Ausbildung</em>) in Germany.</p>
+  <p>Stay tuned for guides, testimonies, application tips, and resources to start your career journey in Germany.</p>
+</body>
+</html>
